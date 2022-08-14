@@ -1,4 +1,4 @@
-// THIS PROGRAM CAN BE MUCH MORE REFINED AND POLISHED, I KNOW THAT SO SHUT UP
+// THIS PROGRAM CAN BE MUCH MORE REFINED AND POLISHED
 
 
 #include <stdio.h>
@@ -77,5 +77,5 @@ int main() {
   char* actualDay;
   totalOddDays = (oddDD(date) + oddMM(month-1) + oddYYYY(year-1)) % 7;  // get total odd days ranging from 0-6
   actualDay = whatDay(totalOddDays);  // send the value of total odd days to get the 'day'
-  printf("%s", actualDay);
+  printf("Day on %i-%i-%i = %s",date, month, year,  actualDay);
 }
